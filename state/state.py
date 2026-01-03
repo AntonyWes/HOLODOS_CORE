@@ -11,7 +11,8 @@ def load_state():
             "paired": False,
             "device_id": None,
             "pin": None,
-            "api_token": None
+            "api_token": None,
+            "target_temperature": None
         }
     else:
         return json.loads(STATE_FILE.read_text())

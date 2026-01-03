@@ -8,9 +8,7 @@ if not STATE["device_id"]:
     STATE["pin"] = generate_pin()
     save_state(STATE)
 
-API = HOLODOS_API(STATE)
-
 print("=== HOLODOS ===")
-print(f"Device ID: {STATE['device_id']}")
-print(f"PIN: {STATE['pin']}")
-print("QR code saved as pair_qr.png")
+
+
+API = HOLODOS_API(STATE)
